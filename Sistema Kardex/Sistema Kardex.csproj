@@ -1,0 +1,608 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3A77172D-3FC6-4804-A8F0-5B65928BA4CC}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sistema_Kardex</RootNamespace>
+    <AssemblyName>Sistema Kardex</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\Bodegas.aspx" />
+    <Content Include="Admin\CategoriaFamilia.aspx" />
+    <Content Include="Admin\CategoriaGrupo.aspx" />
+    <Content Include="Admin\CategoriaSubGrupo.aspx" />
+    <Content Include="Admin\detalleCompra.aspx" />
+    <Content Include="Admin\img1.jpg" />
+    <Content Include="Admin\img2.jpg" />
+    <Content Include="Admin\img3.jpg" />
+    <Content Include="Admin\ReporteCompras.aspx" />
+    <Content Include="Admin\ReporteKardexFamiliar.aspx" />
+    <Content Include="Admin\ReporteKardexGrupo.aspx" />
+    <Content Include="Admin\ReporteKardexSubGrupo.aspx" />
+    <Content Include="Admin\ReporteProductos.aspx" />
+    <Content Include="Admin\ReporteSalaVenta.aspx" />
+    <Content Include="Admin\ReporteUsuarios.aspx" />
+    <Content Include="Admin\ReporteBodega.aspx" />
+    <Content Include="Admin\ReportVentas.aspx" />
+    <Content Include="Publico\img1.jpg" />
+    <Content Include="Publico\img2.jpg" />
+    <Content Include="Publico\img3.jpg" />
+    <Content Include="Admin\KardexFamilia.aspx" />
+    <Content Include="Admin\KardexGrupo.aspx" />
+    <Content Include="Admin\KardexSubGrupo.aspx" />
+    <Content Include="Admin\Productos.aspx" />
+    <Content Include="Admin\Proveedores.aspx" />
+    <Content Include="Admin\SalaDeVentas.aspx" />
+    <Content Include="Admin\VentasAdmin.aspx" />
+    <Content Include="packages.config" />
+    <Content Include="Publico\Login.aspx" />
+    <Content Include="SitioPublico.Master" />
+    <Content Include="Admin\Administrador.Master" />
+    <Content Include="Usuario\img1.jpg" />
+    <Content Include="Usuario\img2.jpg" />
+    <Content Include="Usuario\img3.jpg" />
+    <Content Include="Usuario\MenuUsuario.Master" />
+    <Content Include="Admin\dsUsuarios.xsc">
+      <DependentUpon>dsUsuarios.xsd</DependentUpon>
+    </Content>
+    <Content Include="Admin\dsProductos.xsc">
+      <DependentUpon>dsProductos.xsd</DependentUpon>
+    </Content>
+    <Content Include="Admin\dsBodega.xsc">
+      <DependentUpon>dsBodega.xsd</DependentUpon>
+    </Content>
+    <None Include="Admin\dsBodega.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsBodega.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Admin\dsBodega.xss">
+      <DependentUpon>dsBodega.xsd</DependentUpon>
+    </Content>
+    <Content Include="Admin\dsKardexFamiliar.xsc">
+      <DependentUpon>dsKardexFamiliar.xsd</DependentUpon>
+    </Content>
+    <Content Include="Admin\dsCompras.xsc">
+      <DependentUpon>dsCompras.xsd</DependentUpon>
+    </Content>
+    <None Include="Admin\dsCompras.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCompras.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Admin\dsCompras.xss">
+      <DependentUpon>dsCompras.xsd</DependentUpon>
+    </Content>
+    <None Include="Admin\dsKardexFamiliar.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsKardexFamiliar.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Admin\dsKardexFamiliar.xss">
+      <DependentUpon>dsKardexFamiliar.xsd</DependentUpon>
+    </Content>
+    <Content Include="Admin\dsKardexGrupo.xsc">
+      <DependentUpon>dsKardexGrupo.xsd</DependentUpon>
+    </Content>
+    <None Include="Admin\dsKardexGrupo.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsKardexGrupo.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Admin\dsKardexGrupo.xss">
+      <DependentUpon>dsKardexGrupo.xsd</DependentUpon>
+    </Content>
+    <Content Include="Admin\dsKardexSubGrupo.xsc">
+      <DependentUpon>dsKardexSubGrupo.xsd</DependentUpon>
+    </Content>
+    <None Include="Admin\dsKardexSubGrupo.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsKardexSubGrupo.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Admin\dsKardexSubGrupo.xss">
+      <DependentUpon>dsKardexSubGrupo.xsd</DependentUpon>
+    </Content>
+    <None Include="Admin\dsProductos.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsProductos.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Admin\dsProductos.xss">
+      <DependentUpon>dsProductos.xsd</DependentUpon>
+    </Content>
+    <Content Include="Admin\dsSalaVentas.xsc">
+      <DependentUpon>dsSalaVentas.xsd</DependentUpon>
+    </Content>
+    <None Include="Admin\dsSalaVentas.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsSalaVentas.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Admin\dsSalaVentas.xss">
+      <DependentUpon>dsSalaVentas.xsd</DependentUpon>
+    </Content>
+    <None Include="Admin\dsUsuarios.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsUsuarios.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Admin\dsUsuarios.xss">
+      <DependentUpon>dsUsuarios.xsd</DependentUpon>
+    </Content>
+    <Content Include="Admin\dsVentas.xsc">
+      <DependentUpon>dsVentas.xsd</DependentUpon>
+    </Content>
+    <None Include="Admin\dsVentas.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsVentas.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Admin\dsVentas.xss">
+      <DependentUpon>dsVentas.xsd</DependentUpon>
+    </Content>
+    <Content Include="Usuario\dsFactura.xsc">
+      <DependentUpon>dsFactura.xsd</DependentUpon>
+    </Content>
+    <Content Include="Usuario\dsCreditoFiscal.xsc">
+      <DependentUpon>dsCreditoFiscal.xsd</DependentUpon>
+    </Content>
+    <None Include="Usuario\dsCreditoFiscal.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCreditoFiscal.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Usuario\dsCreditoFiscal.xss">
+      <DependentUpon>dsCreditoFiscal.xsd</DependentUpon>
+    </Content>
+    <None Include="Usuario\dsFactura.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsFactura.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Usuario\dsFactura.xss">
+      <DependentUpon>dsFactura.xsd</DependentUpon>
+    </Content>
+    <Content Include="Usuario\dsTicket.xsc">
+      <DependentUpon>dsTicket.xsd</DependentUpon>
+    </Content>
+    <None Include="Usuario\dsTicket.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTicket.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Usuario\dsTicket.xss">
+      <DependentUpon>dsTicket.xsd</DependentUpon>
+    </Content>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\MenuAdmin.aspx" />
+    <Content Include="Admin\Usuarios.aspx" />
+    <Content Include="css\menu.css" />
+    <Content Include="Publico\Index.aspx" />
+    <Content Include="Publico\index.css" />
+    <Content Include="Publico\Informacion.aspx" />
+    <Content Include="Publico\Login1.aspx" />
+    <Content Include="Usuario\MenuUsuario.aspx" />
+    <Content Include="Usuario\ProductosUsuario.aspx" />
+    <Content Include="Usuario\VentasUsuario.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\Administrador.Master.cs">
+      <DependentUpon>Administrador.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Administrador.Master.designer.cs">
+      <DependentUpon>Administrador.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Bodegas.aspx.cs">
+      <DependentUpon>Bodegas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Bodegas.aspx.designer.cs">
+      <DependentUpon>Bodegas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\CategoriaFamilia.aspx.cs">
+      <DependentUpon>CategoriaFamilia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\CategoriaFamilia.aspx.designer.cs">
+      <DependentUpon>CategoriaFamilia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\CategoriaGrupo.aspx.cs">
+      <DependentUpon>CategoriaGrupo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\CategoriaGrupo.aspx.designer.cs">
+      <DependentUpon>CategoriaGrupo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\CategoriaSubGrupo.aspx.cs">
+      <DependentUpon>CategoriaSubGrupo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\CategoriaSubGrupo.aspx.designer.cs">
+      <DependentUpon>CategoriaSubGrupo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\detalleCompra.aspx.cs">
+      <DependentUpon>detalleCompra.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\detalleCompra.aspx.designer.cs">
+      <DependentUpon>detalleCompra.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\dsBodega.cs">
+      <DependentUpon>dsBodega.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\dsBodega.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsBodega.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\dsCompras.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsCompras.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\dsKardexFamiliar.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsKardexFamiliar.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\dsKardexGrupo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsKardexGrupo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\dsKardexSubGrupo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsKardexSubGrupo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\dsProductos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsProductos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\dsSalaVentas.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsSalaVentas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\dsUsuarios.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsUsuarios.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\dsVentas.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsVentas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\KardexFamilia.aspx.cs">
+      <DependentUpon>KardexFamilia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\KardexFamilia.aspx.designer.cs">
+      <DependentUpon>KardexFamilia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\KardexGrupo.aspx.cs">
+      <DependentUpon>KardexGrupo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\KardexGrupo.aspx.designer.cs">
+      <DependentUpon>KardexGrupo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\KardexSubGrupo.aspx.cs">
+      <DependentUpon>KardexSubGrupo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\KardexSubGrupo.aspx.designer.cs">
+      <DependentUpon>KardexSubGrupo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\MenuAdmin.aspx.cs">
+      <DependentUpon>MenuAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\MenuAdmin.aspx.designer.cs">
+      <DependentUpon>MenuAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Productos.aspx.cs">
+      <DependentUpon>Productos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Productos.aspx.designer.cs">
+      <DependentUpon>Productos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Proveedores.aspx.cs">
+      <DependentUpon>Proveedores.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Proveedores.aspx.designer.cs">
+      <DependentUpon>Proveedores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ReporteCompras.aspx.cs">
+      <DependentUpon>ReporteCompras.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ReporteCompras.aspx.designer.cs">
+      <DependentUpon>ReporteCompras.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ReporteKardexFamiliar.aspx.cs">
+      <DependentUpon>ReporteKardexFamiliar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ReporteKardexFamiliar.aspx.designer.cs">
+      <DependentUpon>ReporteKardexFamiliar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ReporteKardexGrupo.aspx.cs">
+      <DependentUpon>ReporteKardexGrupo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ReporteKardexGrupo.aspx.designer.cs">
+      <DependentUpon>ReporteKardexGrupo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ReporteKardexSubGrupo.aspx.cs">
+      <DependentUpon>ReporteKardexSubGrupo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ReporteKardexSubGrupo.aspx.designer.cs">
+      <DependentUpon>ReporteKardexSubGrupo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ReporteProductos.aspx.cs">
+      <DependentUpon>ReporteProductos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ReporteProductos.aspx.designer.cs">
+      <DependentUpon>ReporteProductos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ReporteSalaVenta.aspx.cs">
+      <DependentUpon>ReporteSalaVenta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ReporteSalaVenta.aspx.designer.cs">
+      <DependentUpon>ReporteSalaVenta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ReporteUsuarios.aspx.cs">
+      <DependentUpon>ReporteUsuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ReporteUsuarios.aspx.designer.cs">
+      <DependentUpon>ReporteUsuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ReporteBodega.aspx.cs">
+      <DependentUpon>ReporteBodega.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ReporteBodega.aspx.designer.cs">
+      <DependentUpon>ReporteBodega.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ReportVentas.aspx.cs">
+      <DependentUpon>ReportVentas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ReportVentas.aspx.designer.cs">
+      <DependentUpon>ReportVentas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SalaDeVentas.aspx.cs">
+      <DependentUpon>SalaDeVentas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\SalaDeVentas.aspx.designer.cs">
+      <DependentUpon>SalaDeVentas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Usuarios.aspx.cs">
+      <DependentUpon>Usuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Usuarios.aspx.designer.cs">
+      <DependentUpon>Usuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\VentasAdmin.aspx.cs">
+      <DependentUpon>VentasAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\VentasAdmin.aspx.designer.cs">
+      <DependentUpon>VentasAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Publico\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Publico\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Publico\Informacion.aspx.cs">
+      <DependentUpon>Informacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Publico\Informacion.aspx.designer.cs">
+      <DependentUpon>Informacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Publico\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Publico\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Publico\Login1.aspx.cs">
+      <DependentUpon>Login1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Publico\Login1.aspx.designer.cs">
+      <DependentUpon>Login1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SitioPublico.Master.cs">
+      <DependentUpon>SitioPublico.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SitioPublico.Master.designer.cs">
+      <DependentUpon>SitioPublico.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Usuario\dsCreditoFiscal.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsCreditoFiscal.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Usuario\dsFactura.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsFactura.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Usuario\dsTicket.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTicket.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Usuario\MenuUsuario.aspx.cs">
+      <DependentUpon>MenuUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usuario\MenuUsuario.aspx.designer.cs">
+      <DependentUpon>MenuUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Usuario\MenuUsuario.Master.cs">
+      <DependentUpon>MenuUsuario.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usuario\MenuUsuario.Master.designer.cs">
+      <DependentUpon>MenuUsuario.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Usuario\ProductosUsuario.aspx.cs">
+      <DependentUpon>ProductosUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usuario\ProductosUsuario.aspx.designer.cs">
+      <DependentUpon>ProductosUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Usuario\VentasUsuario.aspx.cs">
+      <DependentUpon>VentasUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usuario\VentasUsuario.aspx.designer.cs">
+      <DependentUpon>VentasUsuario.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Admin\ReporteBodega.rdlc" />
+    <EmbeddedResource Include="Admin\ReporteCompra.rdlc" />
+    <EmbeddedResource Include="Admin\ReporteKardeSubGrupo.rdlc" />
+    <EmbeddedResource Include="Admin\ReporteKardexFamiliar.rdlc" />
+    <EmbeddedResource Include="Admin\ReporteKardexGrupo.rdlc" />
+    <EmbeddedResource Include="Admin\ReporteProductos.rdlc" />
+    <EmbeddedResource Include="Admin\ReporteSalaVentas.rdlc" />
+    <EmbeddedResource Include="Admin\ReporteUsuarios.rdlc" />
+    <EmbeddedResource Include="Admin\ReporteVentas.rdlc" />
+    <EmbeddedResource Include="Usuario\CreditoFiscal.rdlc" />
+    <EmbeddedResource Include="Usuario\Factura.rdlc" />
+    <EmbeddedResource Include="Usuario\Ticket.rdlc" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51385</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:51385/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

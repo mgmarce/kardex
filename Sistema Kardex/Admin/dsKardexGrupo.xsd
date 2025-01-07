@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsKardexGrupo" targetNamespace="http://tempuri.org/dsKardexGrupo.xsd" xmlns:mstns="http://tempuri.org/dsKardexGrupo.xsd" xmlns="http://tempuri.org/dsKardexGrupo.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsKardexGrupo" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsKardexGrupo" msprop:Generator_UserDSName="dsKardexGrupo">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowClassName="DataTable1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="idKardexGrupo" msprop:Generator_ColumnVarNameInTable="columnidKardexGrupo" msprop:Generator_ColumnPropNameInRow="idKardexGrupo" msprop:Generator_ColumnPropNameInTable="idKardexGrupoColumn" msprop:Generator_UserColumnName="idKardexGrupo" type="xs:string" minOccurs="0" />
+              <xs:element name="FechaRegistro" msprop:Generator_ColumnVarNameInTable="columnFechaRegistro" msprop:Generator_ColumnPropNameInRow="FechaRegistro" msprop:Generator_ColumnPropNameInTable="FechaRegistroColumn" msprop:Generator_UserColumnName="FechaRegistro" type="xs:string" minOccurs="0" />
+              <xs:element name="detalle" msprop:Generator_ColumnVarNameInTable="columndetalle" msprop:Generator_ColumnPropNameInRow="detalle" msprop:Generator_ColumnPropNameInTable="detalleColumn" msprop:Generator_UserColumnName="detalle" type="xs:string" minOccurs="0" />
+              <xs:element name="producto" msprop:Generator_ColumnVarNameInTable="columnproducto" msprop:Generator_ColumnPropNameInRow="producto" msprop:Generator_ColumnPropNameInTable="productoColumn" msprop:Generator_UserColumnName="producto" type="xs:string" minOccurs="0" />
+              <xs:element name="categoria_grupo" msprop:Generator_ColumnVarNameInTable="columncategoria_grupo" msprop:Generator_ColumnPropNameInRow="categoria_grupo" msprop:Generator_ColumnPropNameInTable="categoria_grupoColumn" msprop:Generator_UserColumnName="categoria_grupo" type="xs:string" minOccurs="0" />
+              <xs:element name="cantidad_entradas" msprop:Generator_ColumnVarNameInTable="columncantidad_entradas" msprop:Generator_ColumnPropNameInRow="cantidad_entradas" msprop:Generator_ColumnPropNameInTable="cantidad_entradasColumn" msprop:Generator_UserColumnName="cantidad_entradas" type="xs:string" minOccurs="0" />
+              <xs:element name="valorUnitario_entradas" msprop:Generator_ColumnVarNameInTable="columnvalorUnitario_entradas" msprop:Generator_ColumnPropNameInRow="valorUnitario_entradas" msprop:Generator_ColumnPropNameInTable="valorUnitario_entradasColumn" msprop:Generator_UserColumnName="valorUnitario_entradas" type="xs:string" minOccurs="0" />
+              <xs:element name="total_entrada" msprop:Generator_ColumnVarNameInTable="columntotal_entrada" msprop:Generator_ColumnPropNameInRow="total_entrada" msprop:Generator_ColumnPropNameInTable="total_entradaColumn" msprop:Generator_UserColumnName="total_entrada" type="xs:string" minOccurs="0" />
+              <xs:element name="cantidad_salidas" msprop:Generator_ColumnVarNameInTable="columncantidad_salidas" msprop:Generator_ColumnPropNameInRow="cantidad_salidas" msprop:Generator_ColumnPropNameInTable="cantidad_salidasColumn" msprop:Generator_UserColumnName="cantidad_salidas" type="xs:string" minOccurs="0" />
+              <xs:element name="valorUnitario_salidas" msprop:Generator_ColumnVarNameInTable="columnvalorUnitario_salidas" msprop:Generator_ColumnPropNameInRow="valorUnitario_salidas" msprop:Generator_ColumnPropNameInTable="valorUnitario_salidasColumn" msprop:Generator_UserColumnName="valorUnitario_salidas" type="xs:string" minOccurs="0" />
+              <xs:element name="total_salidas" msprop:Generator_ColumnVarNameInTable="columntotal_salidas" msprop:Generator_ColumnPropNameInRow="total_salidas" msprop:Generator_ColumnPropNameInTable="total_salidasColumn" msprop:Generator_UserColumnName="total_salidas" type="xs:string" minOccurs="0" />
+              <xs:element name="cantidad_saldos" msprop:Generator_ColumnVarNameInTable="columncantidad_saldos" msprop:Generator_ColumnPropNameInRow="cantidad_saldos" msprop:Generator_ColumnPropNameInTable="cantidad_saldosColumn" msprop:Generator_UserColumnName="cantidad_saldos" type="xs:string" minOccurs="0" />
+              <xs:element name="valorUnitario_saldos" msprop:Generator_ColumnVarNameInTable="columnvalorUnitario_saldos" msprop:Generator_ColumnPropNameInRow="valorUnitario_saldos" msprop:Generator_ColumnPropNameInTable="valorUnitario_saldosColumn" msprop:Generator_UserColumnName="valorUnitario_saldos" type="xs:string" minOccurs="0" />
+              <xs:element name="total_saldos" msprop:Generator_ColumnVarNameInTable="columntotal_saldos" msprop:Generator_ColumnPropNameInRow="total_saldos" msprop:Generator_ColumnPropNameInTable="total_saldosColumn" msprop:Generator_UserColumnName="total_saldos" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

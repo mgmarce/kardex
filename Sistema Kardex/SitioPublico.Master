@@ -1,0 +1,44 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SitioPublico.master.cs" Inherits="Sistema_Kardex.SitioPublico" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+         <link rel="stylesheet" href="css/menu.css" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="kardex"><a href="#">Kardex</a></li>
+            <li> <a href="Index.aspx">Inicio</a> </li>
+            <li><a href="Informacion.aspx">Informacion</a></li>
+            <li class="Logout"><a href="Login.aspx">Entrar</a></li>
+        </ul>
+    </nav>
+
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+    <footer>
+   <div class="Copy">
+       <br />
+   <p>Universidad Tecnologica de El Salvador</p> 
+   <p>Desarrollado por: Grupo #07 &copy 2021</p>
+   </div>
+</footer>
+</html>

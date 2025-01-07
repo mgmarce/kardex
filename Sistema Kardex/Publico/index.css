@@ -1,0 +1,32 @@
+﻿body p,h1{
+    padding: 0 1px;
+    line-height: 20px;
+    text-decoration: none;    
+}
+#contents {
+    width:100%;
+    text-align:center;
+}
+
+#left {
+    float:left;
+    width:33%;
+    overflow: hidden;
+    height:fit-content;
+
+}
+
+#center {
+    display: inline-block;
+    margin:0 auto;
+    width:33%;
+    height: 20px;
+ 
+}
+
+#right {
+    float:right;
+    width:33%;
+    height: 20px;
+
+}

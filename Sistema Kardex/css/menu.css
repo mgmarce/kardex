@@ -1,0 +1,118 @@
+﻿body{
+    margin: 0%;
+    padding: 0%;
+    line-height: 10px;
+    font-family: 'Open Sans',sans-serif;
+    background-color: #fff;
+}
+
+.contenido{
+    margin-left:35px;
+    margin-right:35px;
+
+}
+
+input{
+    padding: 5px;
+    border: 1px solid #016d82;
+}
+
+
+.Copy{
+    position:fixed;
+   left:0px;
+   bottom:0px;
+   height:100px;
+    width: 100%;
+    background-color: #016d82;
+    text-align: center;
+    color: #fff;
+}
+nav{
+    
+    margin: 0%;
+    padding: 0%;
+    background-color: #016d82;
+}
+
+.kardex{
+    
+    background-color: #016d82;
+    
+}
+.kardex a{
+    font-size: x-large;
+    cursor: default;
+}
+.kardex a:hover{
+    background-color: #016d82;
+}
+
+.Logout{
+    float: right;
+   
+}
+
+.Logout a{
+       line-height: 61px;
+    font-size: 20px;
+}
+
+.Logout a:hover{
+   background-color: #ff6f60;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+}
+nav ul li{
+    display: inline-block;
+    background-color: #016d82;
+}
+nav a{
+    display: block;
+    padding: 0 10px;
+    color: #fff;
+    line-height: 60px;
+    font-size: 18px;
+    text-decoration: none;
+}
+/* Hide Dropdown by Default*/
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 60px;
+}
+/* hover */
+nav a:hover{
+    background-color: #4a9bb2;
+}
+/* Display Dropdown on Hover */
+nav ul li:hover > ul {
+    display: inherit;
+}
+/* Fisrt Tier Dropdown */
+nav ul ul li{
+    width: 170px;
+    float: none;
+    display: list-item;
+    position: relative;
+
+}
+
+/* ============ Second, Third and More Tiers ===========*/
+nav ul ul ul li {
+    position: relative;
+    top: -60px;
+    left: 170px;
+}
+
+/* Change this in order to change the Dropdown symbol */
+li > a::after { content: ' +';}
+li > a:only-child::after {
+    content: '';
+}
+

@@ -1,0 +1,109 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MenuUsuario.master.cs" Inherits="Sistema_Kardex.Usuario.MenuUsuario" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+         <link rel="stylesheet" href="/css/menu.css" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+      <style type="text/css">
+        .auto-style1 {
+            left: 0px;
+            top: 0px;
+            height: 63px;
+                   z-index:1000;
+        }
+
+
+
+input[type="submit"]{
+       background:#016d82;
+       color:white;
+       cursor:pointer;
+       border-radius:5px;
+       font-size:small;
+          font-family: 'Open Sans',sans-serif;
+}
+
+input[type="submit"]:Hover 
+    { 
+    background:#4a9bb2;
+    } 
+    </style>
+
+     <style type="text/css" media="screen and (max-width:1200px)">
+
+         .labels {
+             display: none;
+             
+         }
+ 
+    </style>
+</head>
+    <nav>
+        <ul class="auto-style1">
+            <li class="kardex"><a href="MenuUsuario.aspx">Kardex</a></li>
+            <li><a href="#">Productos</a>
+            
+                <!--First Tier Drop Down-->
+                <ul>
+
+
+                    <li><a href="ProductosUsuario.aspx">Productos</a></li>  
+                      </ul>          
+             </li>     
+             <li><a href="#">Transacciones</a>
+
+                 <ul>
+
+
+                    <li><a href="VentasUsuario.aspx">Ventas</a></li>
+                      </ul> 
+
+            </li>
+          
+            
+            <li class="Logout"><a href="/Publico/Login.aspx" onclick="CerrarSesion">Salir</a></li>
+            <li class="labels">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Label ID="Label1" runat="server" Text="Usuario" ForeColor="White"></asp:Label>
+            </li>
+            <li class="labels">&nbsp;&nbsp;
+                <asp:Label ID="Label2" runat="server" ForeColor="White" Text="Tipo"></asp:Label>
+            </li>
+            <li></ul>
+    </nav>
+<body>
+    <form id="form1" runat="server">
+        <div class="contenido">
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+           <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+        
+        </asp:ContentPlaceHolder>
+           <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+        
+        </asp:ContentPlaceHolder>
+           <asp:ContentPlaceHolder ID="ContentPlaceHolder4" runat="server">
+        
+        </asp:ContentPlaceHolder>
+             <asp:ContentPlaceHolder ID="ContentPlaceHolder5" runat="server">
+        <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
+        </asp:ContentPlaceHolder>
+    </div>
+            </div>
+    </form>
+</body>
+    <footer>
+   <div class="Copy">
+        <br />  <br />  <br />  <br />  <br />
+   <p>Universidad Tecnologica de El Salvador</p> 
+   <p>Desarrollado por: Grupo #07 &copy 2021</p>
+   </div>
+</footer>
+</html>
